@@ -90,3 +90,33 @@ nav {
   width: 18px;
   height: 18px;
 }
+
+/* Banner Section */
+.banner {
+  background: linear-gradient(90deg, #013223, #006747, #013223); /* green gradient */
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+/* Center logo */
+.banner .center-logo {
+  width: 90px; 
+  height: 90px;
+  margin: 0 auto 15px; 
+  display: block;
+}
+
+/* Heading */
+.banner h1 {
+  font-size: 28px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Paragraph */
+.banner p {
+  font-size: 14px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
