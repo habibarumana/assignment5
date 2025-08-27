@@ -167,12 +167,10 @@ nav {
   transition: color 0.2s ease;
 }
 
-
-
 .card h3 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   margin: 0.8rem 0 0.3rem;
-  color: #222;
+  color: #111111;
 }
 
 .card p {
@@ -192,15 +190,15 @@ nav {
   border-radius: 20px;
   text-align: center;
   padding-top: 0.5rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 1rem;
 }
 
 .card .number {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #111111;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.2rem;
 }
 
 /* --- Action Buttons --- */
@@ -301,10 +299,27 @@ nav {
 }
 
 #historyList li {
-  padding: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 0.8rem;
   border-bottom: 1px solid #e2e8f0;
   font-size: 0.9rem;
-  color: #444;
+  color: #111111;
+  margin-bottom: 10px;
+}
+#historyList li .left { 
+  display: flex; 
+  flex-direction: column; 
+}
+#historyList li .left span { 
+  font-size: 1rem; 
+  color: #5c5c5c; 
+}
+#historyList li .time { 
+  font-size: 1rem; 
+  color: #111111; 
 }
 
 #historyList li:last-child {
