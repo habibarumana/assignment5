@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.hind-madurai-regular {
+  font-family: "Hind Madurai", sans-serif;
+  font-style: normal;
+}
+
+
+
+
+
+/* Reset default browser margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+/* Left side - logo + text */
+.emg-s {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.emg-s .logo {
+  width: 50px;
+  height: 50px;
+}
+
+.emg-s h1 {
+  font-size: 20px;
+  font-weight: 900px;
+  color: #006747;
+}
+
+/* Right side - buttons */
+.btn-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Button styles */
+.btn-div button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Button 1 - Heart */
+.btn1 {
+  background: rgba(65, 255, 107, 0.1);
+}
+
+/* Button 2 - Coin */
+.btn2 {
+  background: rgba(65, 255, 107, 0.1);
+}
+
+/* Button 3 - Green button */
+.btn3 {
+  background: #00B74A;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Images inside buttons */
+.heart, .coin {
+  width: 18px;
+  height: 18px;
+}
