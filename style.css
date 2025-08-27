@@ -1,19 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-}
 .hind-madurai-regular {
   font-family: "Hind Madurai", sans-serif;
   font-style: normal;
 }
 
-
-
-
-
-/* Reset default browser margin & padding */
 * {
   margin: 0;
   padding: 0;
@@ -68,6 +59,10 @@ nav {
   cursor: pointer;
 }
 
+.btn-div button:hover{
+  background: rgb(219, 191, 195);
+}
+
 /* Button 1 - Heart */
 .btn1 {
   background: rgba(65, 255, 107, 0.1);
@@ -93,7 +88,7 @@ nav {
 
 /* Banner Section */
 .banner {
-  background: linear-gradient(90deg, #013223, #006747, #013223); /* green gradient */
+  background: linear-gradient(90deg, #013223, #006747, #013223);
   color: white;
   text-align: center;
   padding: 20px 20px;
@@ -119,4 +114,210 @@ nav {
   font-size: 14px;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+/* --- Main Section Layout --- */
+.main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background: rgba(175, 249, 190, 0.1);
+}
+
+/* --- Cards Grid --- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* --- Card Styling --- */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-top img {
+  width: 48px;
+  height: 48px;
+}
+
+.card-top .heart {
+  font-size: 1.2rem;
+  color: #5c5c5c;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+
+
+.card h3 {
+  font-size: 1rem;
+  margin: 0.8rem 0 0.3rem;
+  color: #222;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #5c5c5c;
+  margin-bottom: 0.6rem;
+}
+
+.card .badge {
+  display: inline-block;
+  background: #f2f2f2;
+  color: #5c5c5c;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.card .number {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #111111;
+  margin-bottom: 0.6rem;
+}
+
+/* --- Action Buttons --- */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  gap: 0.5rem;
+}
+
+.actions button {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.actions button.copy {
+  background: #ffffff;
+  color: #5c5c5c;
+  border: 1px solid #d4d6d5;
+}
+
+.actions button.copy:hover {
+  background: #e2e8f0;
+}
+
+.actions button.call {
+  background: #00a63e;
+  color: #fff;
+}
+
+.actions button.call:hover {
+  background: rgb(209, 209, 81);
+  
+}
+
+.fa-phone {
+  color: #ffffff;
+}
+
+/* --- History Section --- */
+.history {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.history-header h3 {
+  font-size: 1.1rem;
+  color: #2d3748;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.fa-clock {
+  color: #5c5c5c;
+}
+
+.history-header button {
+  padding: 0.4rem 0.8rem;
+  background: #00a63e;
+  border: none;
+  color: #fff;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.history-header button:hover {
+  background: #9cc4ab;
+}
+
+#historyList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#historyList li {
+  padding: 0.6rem;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+#historyList li:last-child {
+  border-bottom: none;
+}
+
+/* --- Responsive --- */
+@media (max-width: 576px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .history {
+    margin-top: 1.5rem;
+  }
 }
